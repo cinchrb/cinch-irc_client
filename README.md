@@ -45,3 +45,9 @@ that contains, from left to right, top to bottom:
 The screenshot (screenshot.png) shows really poor font rendering. This
 is not the fault of Qt but my system configuration which I did not
 bother to adjust for Qt.
+
+# Known bugs
+- It can happen that the client will not update until an event is
+  fired, e.g. by moving the mouse or resizing the window. This is
+  caused by us blatantly modifying the UI from threads other than the
+  main thread, which is a no-go with most GUI toolkits.
