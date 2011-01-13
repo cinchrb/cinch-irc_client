@@ -40,3 +40,8 @@ that contains, from left to right, top to bottom:
 - Sending and receiving of messages
 - Notification about joining and leaving users
   - the user list will be updated as well
+
+# A note on the screenshot
+The screenshot (screenshot.png) shows really poor font rendering. This
+is not the fault of Qt but my system configuration which I did not
+bother to adjust for Qt.
