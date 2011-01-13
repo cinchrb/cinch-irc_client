@@ -77,7 +77,7 @@ class Application
 
     # send messages to the channel
     @u.input.connect(SIGNAL :returnPressed) do
-      text = u.input.text
+      text = @u.input.text
       write_message "&lt;#{@connection.nick}&gt; #{text}"
       @connection.channel_manager.find(CHANNEL).send(text)
       @u.input.clear
